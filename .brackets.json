@@ -1,0 +1,6 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/Project/BetaProject/gulpfile.js",
+        "C:/Project/BetaProject/plugins/ionic-plugin-keyboard/www/android/keyboard.js"
+    ]
+}
