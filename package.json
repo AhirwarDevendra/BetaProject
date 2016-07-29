@@ -22,7 +22,11 @@
     "cordova-plugin-statusbar",
     "ionic-plugin-keyboard",
     "cordova-plugin-network-information",
-    "cordova-plugin-keyboard"
+    "cordova-plugin-keyboard",
+    {
+      "locator": "https://github.com/ranjitpandit/whatsapp-phonegap-plugin.git",
+      "id": "mobi.moica.whatsapp"
+    }
   ],
   "cordovaPlatforms": [
     "android"
