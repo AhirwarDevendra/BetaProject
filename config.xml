@@ -19,7 +19,7 @@
   <preference name="android-minSdkVersion" value="16"/>
   <preference name="BackupWebStorage" value="none"/>
     <preference name="KeepRunning" value="false"/>
-    
+    <preference name="StatusBarBackgroundColor" value="#078ECD"/>
   <preference name="SplashScreen" value="screen"/>
     <plugin name="cordova-plugin-whitelist" spec="1" />
   
