@@ -97,21 +97,28 @@ $scope.playVideo = function() {
 .controller('ShareCtrl', function($scope, $ionicModal,$cordovaSocialSharing){
     console.log("Sharing");
   
-    /*$scope.share = function()
+    $scope.shareApp = function()
     {
         console.log("click");
-      
+      $cordovaSocialSharing.share("This is your message", "This is your subject", "www/imagefile.png", "https://www.thepolyglotdeveloper.com");
+        /*window.plugins.socialsharing.share("Devendra");*/
+      /*$cordovaSocialSharing.share("This is your message", "This is your subject", "www/imagefile.png", "https://www.thepolyglotdeveloper.com");
       $cordovaSocialSharing.share("This is your message", "This is your subject", "www/imagefile.png", "https://www.thepolyglotdeveloper.com");
       $cordovaSocialSharing.share("This is your message", "This is your subject", "www/imagefile.png", "https://www.thepolyglotdeveloper.com");
       $cordovaSocialSharing.share("This is your message", "This is your subject", "www/imagefile.png", "https://www.thepolyglotdeveloper.com");
-      $cordovaSocialSharing.share("This is your message", "This is your subject", "www/imagefile.png", "https://www.thepolyglotdeveloper.com");
-      $cordovaSocialSharing.share("This is your message", "This is your subject", "www/imagefile.png", "https://www.thepolyglotdeveloper.com");
-    }*/
+      $cordovaSocialSharing.share("This is your message", "This is your subject", "www/imagefile.png", "https://www.thepolyglotdeveloper.com");*/
+    }
   
     $scope.share1 = function()
     {
       console.log("sjnakkjsa");
-      window.open('whatsapp://send?text=localgyan.com/LoGyApk/LoGyApp1.4','_blank');
+      startApp.set({ /* params */
+    "action": "ACTION_SEND",
+    "package": "com.whatsapp",
+    "type": "text/plain"
+}, {
+    "android.intent.extra.TEXT":"Text..."
+}).start();
     }
 })
 
