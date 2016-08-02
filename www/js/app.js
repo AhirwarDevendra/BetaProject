@@ -95,6 +95,10 @@ $scope.playVideo = function() {
 })
 
 .controller('ShareCtrl', function($scope, $ionicModal,$cordovaSocialSharing){
+  
+  if (window.StatusBar) {
+            StatusBar.backgroundColorByHexString("#3E2723");
+        }
     console.log("Sharing");
   
     $scope.shareApp = function()
